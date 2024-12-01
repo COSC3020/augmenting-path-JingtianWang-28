@@ -32,3 +32,21 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+///
+
+Each node will be visited once, then added to the visited set and marked. The time complexity is O(v) when the number of nodes is v
+
+The neighbors of each node will also be traversed once. The number of neighbors is equal to the total number of edges. When the number of edges is E, the time complexity is O(E)
+
+When backtracking, the path length is at most equal to the number of nodes, and the time complexity is O(V)
+
+The total time complexity is theta(V+E)
+
+###
+
+https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm
+https://stackoverflow.com/questions/10397118/what-exactly-is-augmenting-path
+
+Plagiarism Statement: “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice
